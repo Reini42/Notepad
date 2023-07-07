@@ -6,9 +6,11 @@
     <title>Notizblock</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="icon" href="./img/note-icon-100x100.png">
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/script-deletedNotes.js"></script>
 </head>
 <body onload="render()">
+
     <div class="noteDialog-bg display-none" id="noteDialog-bg">
         <div class="noteDialog">
             <div id="buttonContainer">
@@ -25,6 +27,11 @@
         <h1>Notizblock</h1>
         <button onclick="showNoteDialog()">Neue Notiz</button>
     </header>
+
+    <nav>
+        <button onclick="render()">start</button>
+        <button onclick="renderDeleted()">gelöschte</button>
+    </nav>
 
     <main id="content"></main>
 </body>

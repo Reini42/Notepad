@@ -83,6 +83,9 @@ function saveNote(i) {
 }
 
 function deleteNote(i) {
+    noteTitlesDeleted.push(noteTitles[i]);
+    noteTextsDeleted.push(noteTexts[i]);
+    storeNotesDeleted();
     noteTitles.splice(i, 1);
     noteTexts.splice(i, 1);
     storeNotes();
