@@ -14,6 +14,13 @@ function storeNotes() {
     localStorage.setItem('noteTexts', JSON.stringify(noteTexts));
 }
 
+function loadNotes() {
+    if (localStorage.getItem('noteTitles') || localStorage.getItem('noteTexts')) {
+        noteTitles= JSON.parse(localStorage.getItem('noteTitles'));
+        noteTexts= JSON.parse(localStorage.getItem('noteTexts'));
+    }    
+}
+
 function saveNote() {
     let inputTitle= document.getElementById('inputTitle');
     let inputText= document.getElementById('inputText');
