@@ -9,10 +9,19 @@
     <script src="./script.js"></script>
 </head>
 <body>
+    <div class="newNote-bg display-none" id="newNote-bg">
+        <div class="newNote">
+            <button>Speichern</button>
+            <button>Löschen</button>
+            <input type="text" id="title" placeholder="Titel...">
+            <input type="text" id="text" placeholder="Text...">
+        </div>
+    </div>
+    
     <header>
         <img src="./img/note-icon-1280x1280.png" alt="logo">
         <h1>Notizblock</h1>
-        <button>Neue Notiz</button>
+        <button onclick="showNewNote()">Neue Notiz</button>
     </header>
 
     <main id="content"></main>
