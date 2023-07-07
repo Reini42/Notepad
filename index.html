@@ -9,10 +9,12 @@
     <script src="./script.js"></script>
 </head>
 <body onload="render()">
-    <div class="newNote-bg display-none" id="newNote-bg">
-        <div class="newNote">
-            <button onclick="saveNote()">Speichern</button>
-            <button>Abbrechen</button>
+    <div class="noteDialog-bg display-none" id="noteDialog-bg">
+        <div class="noteDialog">
+            <div id="buttonContainer">
+                <!-- <button onclick="saveNote()">Speichern</button>
+                <button onclick="hideNoteDialog()">Abbrechen</button> -->
+            </div>
             <input type="text" id="inputTitle" placeholder="Titel...">
             <input type="text" id="inputText" placeholder="Text...">
         </div>
@@ -21,7 +23,7 @@
     <header>
         <img src="./img/note-icon-1280x1280.png" alt="logo">
         <h1>Notizblock</h1>
-        <button onclick="showNewNote()">Neue Notiz</button>
+        <button onclick="showNoteDialog()">Neue Notiz</button>
     </header>
 
     <main id="content"></main>

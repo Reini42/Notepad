@@ -1,4 +1,4 @@
 # TuEs!
-- Notiz löschen
-- Notiz ändern
+
+- gelöschte Notizen anschauen
 - Style
