@@ -8,11 +8,11 @@
     <link rel="icon" href="./img/note-icon-100x100.png">
     <script src="./script.js"></script>
 </head>
-<body>
+<body onload="render()">
     <div class="newNote-bg display-none" id="newNote-bg">
         <div class="newNote">
             <button onclick="saveNote()">Speichern</button>
-            <button>Löschen</button>
+            <button>Abbrechen</button>
             <input type="text" id="inputTitle" placeholder="Titel...">
             <input type="text" id="inputText" placeholder="Text...">
         </div>

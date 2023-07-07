@@ -27,6 +27,12 @@ header img {
     background-color: white;
 }
 
+.note {
+    border: 1px solid black;
+    margin: 8px;
+    padding: 8px;
+}
+
 .display-none {
     display: none;
 }
