@@ -52,3 +52,10 @@ function saveNote() {
     inputText.value= '';
 }
 
+function deleteNote(i) {
+    noteTitles.splice(i, 1);
+    noteTexts.splice(i, 1);
+    storeNotes();
+    render();
+}
+
