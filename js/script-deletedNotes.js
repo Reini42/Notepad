@@ -15,6 +15,7 @@ function renderDeleted() {
             </div>
         `;
     }
+    navActivate('nav-deleted');
 }
 
 function storeNotesDeleted() {

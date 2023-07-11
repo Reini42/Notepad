@@ -15,6 +15,7 @@ function render() {
             </div>
         `;
     }
+    navActivate('nav-notes');
 }
 
 function showNoteDialog(i) {
@@ -78,7 +79,7 @@ function saveNote(i) {
         noteTexts[i]= inputText.value;
     }
     storeNotes();
-    hideNoteDialog();
+    // hideNoteDialog();
     render();
 }
 
@@ -94,6 +95,18 @@ function deleteNote(i) {
 
 function changeNote(i) {
     showNoteDialog(i);
+}
 
+function navActivate(navItem) {
+    document.getElementById('nav-notes').classList.remove('nav-item-active');
+    document.getElementById('nav-deleted').classList.remove('nav-item-active');
+    document.getElementById('nav-quotes').classList.remove('nav-item-active');
+    
+    document.getElementById(navItem).classList.add('nav-item-active');
+    
+}
+
+function testen() {
+    console.log('testen() wird ausgeführt');
 }
 

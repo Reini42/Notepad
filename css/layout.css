@@ -65,14 +65,19 @@ nav {
     position: absolute;
     bottom: 0;
     margin-bottom: 18px;
+    text-align: center;
+}
+
+.imprint-container * {
+    margin: 8px 0;
+    cursor: pointer;
 }
 
 /*********************************** MAIN ***********************************/
 
-.main-container {
-    background-color: green;
-}
 
 /*********************************** DIALOG-OVERLAY ***********************************/
+
+
 
 

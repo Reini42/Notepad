@@ -1,10 +1,4 @@
 # TuEs!
-- Icons  
-    - Start
-    - Gelöscht
-    - Zitate
-    - bearbeiten
-- Sprache Deutsch
 - Style
     - Navbar links
         - NavItem
@@ -12,7 +6,10 @@
         - NavItem hover
     - Notizen Liste
     - Notiz-Dialog
+- Zitate
+    - Renderfunktion
 - Impressum und Datenschutz
+    - Render-Funktion
 - Hover-Effekte und Transitions
 
 # Hirnpresse

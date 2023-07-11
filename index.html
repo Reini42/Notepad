@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <script src="./js/script.js"></script>
-    <script src="./js/script-deletedNotes.js"></script> -->
+    <script src="./js/script.js"></script>
+    <script src="./js/script-deletedNotes.js"></script>
+    <script src="./js/script-quotes.js"></script>
 </head>
 <body onload="render()">
 
@@ -38,15 +39,15 @@
         <img class="main-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon">
 
         <div class="nav-items-container">
-            <div class="nav-item">
+            <div class="nav-item" id="nav-notes" onclick="render()">
                 <img src="./img/notizbuch2-512x512.png" alt="notizblock2-icon">
                 <h2>Notizen</h2>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" id="nav-deleted" onclick="renderDeleted()">
                 <img src="./img/mull-512x512.png" alt="notizblock-icon">
                 <h2>Gelöschte</h2>
             </div>
-            <div class="nav-item">
+            <div class="nav-item" id="nav-quotes" onclick="renderQuotes()">
                 <img src="./img/plaudern-512x512.png" alt="notizblock-icon">
                 <h2>Zitate</h2>
             </div>
@@ -66,14 +67,10 @@
     </div>
     -->
     <div class="main-container">
-        <div class="newNote-container">neue Notiz</div>
+        <button onclick="showNoteDialog()">Notiz schreiben...</button>       
+        
         <main id="content">
             <div class="note">
-                <input type="text" placeholder="Ich bin ein Titel">
-                <textarea name="disch" id="disch" cols="30" rows="10">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos unde quibusdam tempore aperiam atque impedit, mollitia debitis, voluptate eos qui id natus a vitae consectetur, ut eius asperiores. Beatae harum possimus explicabo cumque expedita, nulla magni velit libero totam tempora omnis aut optio ea. Dolore debitis sunt harum voluptatibus!
-                </textarea>
-                <a href="diiiisch">schließen</a>
             </div>
         </main>
     </div>
