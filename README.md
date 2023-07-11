@@ -1,11 +1,7 @@
 # TuEs!
 - Style
-    - Navbar links
-        - NavItem
-        - NavItem aktiv
-        - NavItem hover
-    - Notizen Liste
     - Notiz-Dialog
+    - Notizen Liste
 - Zitate
     - Renderfunktion
 - Impressum und Datenschutz
@@ -16,3 +12,4 @@
 - Hintergrundfarbe bei gelöschten rot
 - Datenschutz, Impressum und Quellenangabe als Notiz
 - auf Notiz klicken = bearbeiten
+- Opacity schrift navbar 65%?
