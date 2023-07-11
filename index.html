@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notizblock</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <link rel="icon" href="./img/note-icon-100x100.png">
-    <script src="./js/script.js"></script>
-    <script src="./js/script-deletedNotes.js"></script>
+    <link rel="icon" href="./img/notizbuch-512x512.png">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/layout.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <script src="./js/script.js"></script>
+    <script src="./js/script-deletedNotes.js"></script> -->
 </head>
 <body onload="render()">
 
@@ -22,17 +26,56 @@
         </div>
     </div>
     
+    <!-- 
     <header>
         <img src="./img/note-icon-1280x1280.png" alt="logo">
         <h1>Notizblock</h1>
         <button onclick="showNoteDialog()">Neue Notiz</button>
     </header>
+    -->
 
     <nav>
-        <button onclick="render()">start</button>
-        <button onclick="renderDeleted()">gelöschte</button>
+        <img class="main-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon">
+
+        <div class="nav-items-container">
+            <div class="nav-item">
+                <img src="./img/notizbuch2-512x512.png" alt="notizblock2-icon">
+                <h2>Notizen</h2>
+            </div>
+            <div class="nav-item">
+                <img src="./img/mull-512x512.png" alt="notizblock-icon">
+                <h2>Gelöschte</h2>
+            </div>
+            <div class="nav-item">
+                <img src="./img/plaudern-512x512.png" alt="notizblock-icon">
+                <h2>Zitate</h2>
+            </div>
+        </div>
+
+        <div class="imprint-container">
+            <h2>Impressum</h2>
+            <h2>Quellenangaben</h2>
+            <h2>Datenschutz</h2>
+        </div>
     </nav>
 
-    <main id="content"></main>
+    <!-- 
+    <div>
+        <button onclick="render()">start</button>
+        <button onclick="renderDeleted()">gelöschte</button>
+    </div>
+    -->
+    <div class="main-container">
+        <div class="newNote-container">neue Notiz</div>
+        <main id="content">
+            <div class="note">
+                <input type="text" placeholder="Ich bin ein Titel">
+                <textarea name="disch" id="disch" cols="30" rows="10">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos unde quibusdam tempore aperiam atque impedit, mollitia debitis, voluptate eos qui id natus a vitae consectetur, ut eius asperiores. Beatae harum possimus explicabo cumque expedita, nulla magni velit libero totam tempora omnis aut optio ea. Dolore debitis sunt harum voluptatibus!
+                </textarea>
+                <a href="diiiisch">schließen</a>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

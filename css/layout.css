@@ -1,0 +1,78 @@
+
+/*********************************** GLOBAL ***********************************/
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.display-none {
+    display: none;
+}
+
+/*********************************** NAVBAR ***********************************/
+
+nav {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    align-items: center;
+}
+
+.main-icon {
+    width: 30%;
+    align-self: center;
+}
+
+.nav-items-container {
+    margin-top: 24px;
+    width: 100%;
+}
+
+
+.nav-item {
+    display: flex;
+    padding: 8px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 90%;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.nav-item:hover {
+    background-color: #f1f3f4;
+    cursor: pointer;
+}
+
+.nav-item-active {
+    background-color: rgb(254, 239, 195);
+}
+
+.nav-item img {
+    height: 1.8em;
+}
+
+.nav-item h2 {
+    padding-left: 28px;
+    padding-top: 7px;
+    font-size: 16px;
+}
+
+.imprint-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 18px;
+}
+
+/*********************************** MAIN ***********************************/
+
+.main-container {
+    background-color: green;
+}
+
+/*********************************** DIALOG-OVERLAY ***********************************/
+
+
