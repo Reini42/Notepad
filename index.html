@@ -16,20 +16,10 @@
 </head>
 <body onload="render()">
 
-    <div class="noteDialog-bg display-none" id="noteDialog-bg">
-        <div class="noteDialog">
-            <div class="input-container">
-                <input class="input-Title" type="text" id="inputTitle" placeholder="Titel...">
-                <textarea class="input-Text" type="text" id="inputText" placeholder="Notiz schreiben..."></textarea>
-            </div>
+<!------------------------ NAV ------------------------>
 
-            <div class="sperator"></div>
-            <div class="save-button-container" id="saveButtonContainer"></div>
-        </div>
-    </div>
-    
     <nav>
-        <img class="main-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon">
+        <img class="main-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon" onclick="testen()">
 
         <div class="nav-items-container">
             <div class="nav-item" id="nav-notes" onclick="render()">
@@ -53,6 +43,8 @@
         </div>
     </nav>
 
+<!------------------------ MAIN ------------------------>    
+
     <div class="main-container">
 
         <div class="newNote-container">
@@ -60,9 +52,23 @@
         </div>       
         
         <main id="content">
-            <div class="note">
-            </div>
         </main>
     </div>
+
+<!------------------------ NOTE-DIALOG ------------------------>
+
+    <div class="noteDialog-bg display-none" id="noteDialog-bg">
+        <div class="noteDialog">
+            <div class="input-container">
+                <input class="input-Title" type="text" id="inputTitle" placeholder="Titel...">
+                <textarea class="input-Text" type="text" id="inputText" placeholder="Notiz schreiben..."></textarea>
+            </div>
+
+            <div class="sperator"></div>
+            <div class="save-button-container" id="saveButtonContainer"></div>
+        </div>
+    </div>
+
 </body>
 </html>
+

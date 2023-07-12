@@ -1,8 +1,5 @@
 # TuEs!
 - Style
-    - Notiz-Dialog
-        - Notiz speichern
-        - Notiz löschen
     - Notizen Liste
 - Zitate
     - Renderfunktion

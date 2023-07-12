@@ -11,7 +11,7 @@ function render() {
             <div class="note">
                 <h3 class="title" onclick="changeNote(${i})">${noteTitles[i]}</h3>
                 <p class="text">${noteTexts[i]}</p>
-                <button onclick="deleteNote(${i})">Löschen</button>
+                <img class="note-del-img" src="./img/mull-512x512.png" alt="delete-icon" onclick="deleteNote(${i})">
             </div>
         `;
     }
@@ -107,6 +107,14 @@ function navActivate(navItem) {
 }
 
 function testen() {
+    let text= 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut itaque nulla eaque a ducimus maiores eos officiis iusto, earum debitis quo, aliquam iste ratione quos asperiores assumenda, est suscipit modi quia illum incidunt repellat id eius. Aliquam iusto, odio dolor similique sequi expedita nisi tenetur, est perspiciatis ab fugit provident velit. Placeat excepturi maiores aliquam, nobis nemo illum doloribus eveniet aut delectus enim a accusantium consequatur, rerum animi similique quibusdam ipsam neque aperiam omnis? Deserunt corporis voluptatum incidunt libero minus? Harum modi amet excepturi cumque laudantium saepe, tenetur, odio cupiditate molestias, provident nostrum et sapiente? Explicabo aliquid dolor necessitatibus.';
+    
     console.log('testen() wird ausgeführt');
+    for (i=0; i<50; i++) {
+        noteTitles.push(`Testen ${i}`);
+        noteTexts.push(text);
+    }
+    storeNotes();
+    render();
 }
 
