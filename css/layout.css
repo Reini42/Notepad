@@ -181,14 +181,14 @@ nav {
     align-items: center;
 }
 
-.save-button {
+.dialog-button {
     font-size: 14px;
     font-weight: bold;
     color: rgb(0 0 0 / 65%);
     padding-right: 20px;
 }
 
-.save-button:hover {
+.dialog-button:hover {
     cursor: pointer;
 }
 

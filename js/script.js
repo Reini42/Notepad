@@ -26,13 +26,15 @@ function showNoteDialog(i) {
         let inputText= document.getElementById('inputText');
 
         buttonContainer.innerHTML= `
-            <p class="save-button" onclick=saveNote(${i})>Speichern</p>
+            <p class="dialog-button" onclick="saveNote(${i})">Speichern</p>
+            <p class="dialog-button" onclick="hideNoteDialog()">Abbrechen</p>
         `;
         inputTitle.value= noteTitles[i];
         inputText.value= noteTexts[i];
     } else {
         buttonContainer.innerHTML= `
-            <p class="save-button" onclick="saveNote()">Speichern</p>
+            <p class="dialog-button" onclick="saveNote()">Speichern</p>
+            <p class="dialog-button" onclick="hideNoteDialog()">Abbrechen</p>
         `;
     }
     document.getElementById('noteDialog-bg').classList.remove('display-none');
