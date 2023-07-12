@@ -16,7 +16,7 @@
 </head>
 <body onload="render()">
 
-    <div class="noteDialog-bg" id="noteDialog-bg">
+    <div class="noteDialog-bg display-none" id="noteDialog-bg">
         <div class="noteDialog">
             <div class="input-container">
                 <input class="input-Title" type="text" id="inputTitle" placeholder="Titel...">
@@ -24,20 +24,12 @@
             </div>
 
             <div class="sperator"></div>
-            <div class="save-button-container">
-                <p class="save-button">Speichern</p>
+            <div class="save-button-container" id="saveButtonContainer">
+                <!-- <p class="save-button">Speichern</p> -->
             </div>
         </div>
     </div>
     
-    <!-- 
-    <header>
-        <img src="./img/note-icon-1280x1280.png" alt="logo">
-        <h1>Notizblock</h1>
-        <button onclick="showNoteDialog()">Neue Notiz</button>
-    </header>
-    -->
-
     <nav>
         <img class="main-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon">
 
@@ -63,12 +55,6 @@
         </div>
     </nav>
 
-    <!-- 
-    <div>
-        <button onclick="render()">start</button>
-        <button onclick="renderDeleted()">gelöschte</button>
-    </div>
-    -->
     <div class="main-container">
 
         <div class="newNote-container">

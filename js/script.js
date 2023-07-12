@@ -19,22 +19,20 @@ function render() {
 }
 
 function showNoteDialog(i) {
-    let buttonContainer= document.getElementById('buttonContainer');
+    let buttonContainer= document.getElementById('saveButtonContainer');
 
     if (i != undefined) {
         let inputTitle= document.getElementById('inputTitle');
         let inputText= document.getElementById('inputText');
 
         buttonContainer.innerHTML= `
-            <button onclick="saveNote(${i})">Speichern</button>
-            <button onclick="hideNoteDialog()">Abbrechen</button>
+            <p class="save-button" onclick=saveNote(${i})>Speichern</p>
         `;
         inputTitle.value= noteTitles[i];
         inputText.value= noteTexts[i];
     } else {
         buttonContainer.innerHTML= `
-            <button onclick="saveNote()">Speichern</button>
-            <button onclick="hideNoteDialog()">Abbrechen</button>
+            <p class="save-button" onclick="saveNote()">Speichern</p>
         `;
     }
     document.getElementById('noteDialog-bg').classList.remove('display-none');
@@ -79,7 +77,7 @@ function saveNote(i) {
         noteTexts[i]= inputText.value;
     }
     storeNotes();
-    // hideNoteDialog();
+    hideNoteDialog();
     render();
 }
 
