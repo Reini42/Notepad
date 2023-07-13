@@ -79,18 +79,18 @@ nav {
     width: 100%;
     height: 100vh;
     /* background-color: lightgreen; */
-    overflow: scroll;
+    display: flex;
+    flex-direction: column;
 }
 
 /*********************************** NEW-NOTE-BUTTON ***********************************/
 
 .newNote-container {
     width: 100%;
-    height: 120px;
+    flex: 0 0 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
 }
 
 .newNote-button {
@@ -110,6 +110,8 @@ nav {
 /*********************************** MAIN ***********************************/
 
 main {
+    flex: 0 0 calc(100vh - 120px);
+    overflow: scroll;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
