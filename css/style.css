@@ -126,6 +126,7 @@ main {
     overflow: clip;
     margin: 8px;
     padding: 13px;
+    cursor: pointer;
 }
 
 .title {
@@ -147,6 +148,8 @@ main {
     bottom: 0;
     right: 0;
     background-color: inherit;
+    margin: 6px;
+    z-index: 1;
 }
 
 /*********************************** DIALOG-OVERLAY ***********************************/

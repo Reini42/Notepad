@@ -8,8 +8,8 @@ function render() {
     content.innerHTML = '';
     for (let i=0; i < noteTitles.length; i++) {
         content.innerHTML += `
-            <div class="note">
-                <h3 class="title" onclick="changeNote(${i})">${noteTitles[i]}</h3>
+            <div class="note" onclick="changeNote(${i})">
+                <h3 class="title">${noteTitles[i]}</h3>
                 <p class="text">${noteTexts[i]}</p>
                 <img class="note-del-img" src="./img/mull-512x512.png" alt="delete-icon" onclick="deleteNote(${i})">
             </div>
@@ -84,6 +84,7 @@ function saveNote(i) {
 }
 
 function deleteNote(i) {
+    event.stopPropagation();
     noteTitlesDeleted.push(noteTitles[i]);
     noteTextsDeleted.push(noteTexts[i]);
     storeNotesDeleted();

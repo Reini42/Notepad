@@ -1,5 +1,4 @@
 # TuEs!
-- Style trash-icon
 - style notiz bearbeiten
     - klick auf notiz (nicht auf Titel)
     - bearbeiten-icon neben trash-icon!
