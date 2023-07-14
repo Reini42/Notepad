@@ -11,7 +11,7 @@ function render() {
             <div class="note" onclick="changeNote(${i})">
                 <h3 class="title">${noteTitles[i]}</h3>
                 <p class="text">${noteTexts[i]}</p>
-                <img class="note-del-img" src="./img/mull-512x512.png" alt="delete-icon" onclick="deleteNote(${i})">
+                <img class="note-icon" src="./img/mull-512x512.png" alt="delete-icon" onclick="deleteNote(${i})">
             </div>
         `;
     }
