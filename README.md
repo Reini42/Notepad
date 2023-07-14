@@ -1,6 +1,4 @@
 # TuEs!
-- style notiz bearbeiten
-    - klick auf notiz (nicht auf Titel)
 - style gelöschte
 - style Zitate
 - Zitate Renderfunktion
