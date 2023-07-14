@@ -27,6 +27,7 @@ function showNoteDialog(i) {
 
         buttonContainer.innerHTML= `
             <p class="dialog-button" onclick="saveNote(${i})">Speichern</p>
+            <p class="dialog-button" onclick="deleteNote(${i})">Löschen</p>
             <p class="dialog-button" onclick="hideNoteDialog()">Abbrechen</p>
         `;
         inputTitle.value= noteTitles[i];
@@ -92,6 +93,7 @@ function deleteNote(i) {
     noteTexts.splice(i, 1);
     storeNotes();
     render();
+    hideNoteDialog();
 }
 
 function changeNote(i) {
