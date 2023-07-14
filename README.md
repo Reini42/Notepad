@@ -1,9 +1,9 @@
 # TuEs!
-- style gelöschte
 - style Zitate
 - Zitate Renderfunktion
 - Impressum und Datenschutz
 - Quellenangaben
+- link für test-funktionen
 - Hover-Effekte und Transitions
 
 # Hirnpresse
