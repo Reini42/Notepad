@@ -8,7 +8,9 @@
 }
 
 .author {
-    font-size: 1em;
+    font-size: 0.9em;
+    text-align: right;
+    padding-top: 18px;
 }
 
 .quote-text {

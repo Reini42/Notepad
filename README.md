@@ -1,6 +1,4 @@
 # TuEs!
-- style Zitate
-- Zitate Renderfunktion
 - Impressum und Datenschutz
 - Quellenangaben
 - link für test-funktionen
