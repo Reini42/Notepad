@@ -1,0 +1,20 @@
+.note-impr {
+    background-color: white;
+    border: 4px solid black;
+}
+
+.note-attr {
+    background-color: white;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.attr-icon {
+    width: 50px;
+    align-self: center;
+}
+
+.attr-text {
+    padding-top: 32px;
+}

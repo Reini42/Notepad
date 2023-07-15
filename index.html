@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/quotes.css" type="text/css">
+    <link rel="stylesheet" href="./css/imprint.css" type="text/css">
     <!-- Scripts -->
     <script src="./js/script.js"></script>
     <script src="./js/script-deletedNotes.js"></script>
     <script src="./js/script-quotes.js"></script>
+    <script src="./js/script-Impressum.js"></script>
 </head>
 <body onload="render()">
 
@@ -37,9 +39,8 @@
         </div>
 
         <div class="imprint-container">
-            <h2>Impressum</h2>
-            <h2>Quellenangaben</h2>
-            <h2>Datenschutz</h2>
+            <h2 onclick="renderImprint()">Impressum</h2>
+            <h2 onclick="renderAttribution()">Quellenangaben</h2>
         </div>
     </nav>
 
