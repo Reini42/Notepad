@@ -56,6 +56,11 @@
         flex: 0 0 80px;
     }
 
+    /*** MAIN ***/
+
+    .note:last-child {
+        margin-bottom: 40px;
+    }
 
 }
 
