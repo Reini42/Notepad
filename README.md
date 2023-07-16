@@ -1,6 +1,5 @@
 # TuEs!
-- responsive
-- link für test-funktionen 
+- link für test-funktionen
 - Hover-Effekte und Transitions
 
 # Hirnpresse
