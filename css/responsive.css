@@ -1,6 +1,6 @@
 @media screen and (max-width: 1060px) {
     nav {
-        background-color: lightcoral;
+        background-color: hsl(0 0% 85%);
         flex: 0 0 200px;
     }
 
@@ -40,3 +40,10 @@
         flex: 0 0 80px;
     }
 }
+
+@media screen and (max-width: 499px) {
+    .newNote-button {
+        padding: 12px 30px;
+    }
+}
+
