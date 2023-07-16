@@ -1,8 +1,7 @@
 # TuEs!
-- Impressum und Datenschutz
-- Quellenangaben
-- link für test-funktionen
+- gestashtes zurück holen
 - responsive
+- link für test-funktionen 
 - Hover-Effekte und Transitions
 
 # Hirnpresse
