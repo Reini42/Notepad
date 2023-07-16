@@ -14,9 +14,14 @@
 /******************* MOBILE - NAVBAR BOTTOM *******************/
 
 @media screen and (max-width: 940px) {
+
+    /*** GLOBAL ***/
+
     .responsive-hidden {
         display: none;
     }
+
+    /*** NAVABAR ***/
 
     nav {
         background-color: hsl(0 0% 85%);
@@ -26,6 +31,8 @@
         height: auto;
         z-index: 2;
         padding-top: 0;
+        will-change: transform;
+        transform: translateZ(0);
     }
 
     .nav-items-container {
@@ -45,13 +52,13 @@
         display: block;
     }
 
+    /*** NEW-NOTE-CONTAINER ***/
+
     .newNote-container {
         flex: 0 0 80px;
     }
 
-    main {
-        padding-bottom: 64px;
-    }
+
 }
 
 /******************* NEW-NOTE-BUTTON THIN *******************/

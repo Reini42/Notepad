@@ -91,6 +91,9 @@ function renderInfoResponsive() {
     let content= document.getElementById('content');
 
     content.innerHTML = '';
+
+    //////////// IMPRESSUM
+
     content.innerHTML += `
         <div class="note note-impr">
             <h3 class="title">Angaben gemäß §5TMG</h3>
@@ -109,6 +112,9 @@ function renderInfoResponsive() {
             </p>
         </div>
     `;
+
+    //////////// QUELLENANGABE
+
     content.innerHTML += `
         <div class="note note-attr">
             <img class="attr-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon">
@@ -166,5 +172,18 @@ function renderInfoResponsive() {
             </p>
         </div>
     `;
+
+    //////////// TEST-FUNKTION
+
+    content.innerHTML +=
+    `
+    <div class="note note-impr">
+        <h3 class="title">Testen</h3>
+        <p class="text">
+            Die <a href="#" onclick="testen()">Testfunktion</a> erstellt 50 Notizen mit Standard-Text.<br>
+            Achtung! Aktuelle Notizen werden überschrieben!
+        </p>
+</div>`
+
     navActivate();
 }

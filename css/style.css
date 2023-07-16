@@ -134,6 +134,10 @@ main {
     align-content: flex-start;
 }
 
+main::-webkit-scrollbar {
+    display: none;
+}
+
 .note {
     background-color: rgb(254, 239, 195);
     width: 200px;
