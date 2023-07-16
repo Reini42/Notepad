@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/quotes.css" type="text/css">
     <link rel="stylesheet" href="./css/imprint.css" type="text/css">
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css">
     <!-- Scripts -->
     <script src="./js/script.js"></script>
     <script src="./js/script-deletedNotes.js"></script>
@@ -21,26 +22,27 @@
 <!------------------------ NAV ------------------------>
 
     <nav>
-        <img class="main-icon" src="./img/notizbuch-512x512.png" alt="notizbuch-icon" onclick="testen()">
+        <img class="main-icon responsive-hidden" src="./img/notizbuch-512x512.png" alt="notizbuch-icon" onclick="testen()">
 
         <div class="nav-items-container">
             <div class="nav-item" id="nav-notes" onclick="render()">
                 <img src="./img/notizbuch2-512x512.png" alt="notizblock2-icon">
-                <h2>Notizen</h2>
+                <h2 class="responsive-hidden">Notizen</h2>
             </div>
             <div class="nav-item" id="nav-deleted" onclick="renderDeleted()">
                 <img src="./img/mull-512x512.png" alt="notizblock-icon">
-                <h2>Gelöschte</h2>
+                <h2 class="responsive-hidden">Gelöschte</h2>
             </div>
             <div class="nav-item" id="nav-quotes" onclick="renderQuotes()">
                 <img src="./img/plaudern-512x512.png" alt="notizblock-icon">
-                <h2>Zitate</h2>
+                <h2 class="responsive-hidden">Zitate</h2>
             </div>
         </div>
 
-        <div class="imprint-container">
-            <h2 onclick="renderImprint()">Impressum</h2>
-            <h2 onclick="renderAttribution()">Quellenangaben</h2>
+        <div class="imprint-container responsive-hidden">
+            <h2 class="responsive-hidden" onclick="renderImprint()">Impressum</h2>
+            <h2 class="responsive-hidden" onclick="renderAttribution()">Quellenangaben</h2>
+            <h2 class="responsive-hidden" class="nav-testlink" onclick="testen()">testen</h2>
         </div>
     </nav>
 
