@@ -159,6 +159,16 @@ function renderInfoResponsive() {
         </div>
 
         <div class="note note-attr">
+            <h3 class="title">Schriftarten von Google-Fonts</h3>
+            <p class="text attr-text">
+                <ul>
+                    <li>Roboto</li>
+                    <li>Dancing Script (Zitate)</li>
+                </ul>
+            </p>
+        </div>
+                
+        <div class="note note-attr">
             <h3 class="title">reset.css</h3>
             <p class="text attr-text">
             <a href="https://meyerweb.com/eric/tools/css/reset/">https://meyerweb.com/eric/tools/css/reset/</a>
