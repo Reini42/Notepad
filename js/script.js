@@ -104,6 +104,7 @@ function navActivate(navItem) {
     document.getElementById('nav-notes').classList.remove('nav-item-active');
     document.getElementById('nav-deleted').classList.remove('nav-item-active');
     document.getElementById('nav-quotes').classList.remove('nav-item-active');
+    document.getElementById('nav-info').classList.remove('nav-item-active');
     
     if (navItem) {
         document.getElementById(navItem).classList.add('nav-item-active');

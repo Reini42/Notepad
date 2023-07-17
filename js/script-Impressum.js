@@ -195,5 +195,5 @@ function renderInfoResponsive() {
         </p>
 </div>`
 
-    navActivate();
+    navActivate('nav-info');
 }
