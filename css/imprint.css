@@ -4,11 +4,16 @@
     cursor: default;
 }
 
+.note-impr .text{
+    white-space: normal;
+}
+
 .note-attr {
     background-color: white;
     border: 4px solid black;
     display: flex;
     flex-direction: column;
+
 }
 
 .attr-icon {
