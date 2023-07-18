@@ -2,12 +2,16 @@ let noteTitles= [];
 let noteTexts= [];
 
 function render() {
-    let content= document.getElementById('content');
-
     loadNotes();
-    content.innerHTML = '';
+    writeNotesToElement('content');
+    navActivate('nav-notes');
+}
+
+function writeNotesToElement(elementId) {
+    let element= document.getElementById(elementId);
+    element.innerHTML = '';
     for (let i=0; i < noteTitles.length; i++) {
-        content.innerHTML += `
+        element.innerHTML += `
             <div class="note" onclick="changeNote(${i})">
                 <h3 class="title">${noteTitles[i]}</h3>
                 <p class="text">${noteTexts[i]}</p>
@@ -15,30 +19,37 @@ function render() {
             </div>
         `;
     }
-    navActivate('nav-notes');
 }
 
 function showNoteDialog(i) {
-    let buttonContainer= document.getElementById('saveButtonContainer');
-
     if (i != undefined) {
         let inputTitle= document.getElementById('inputTitle');
         let inputText= document.getElementById('inputText');
 
+        writeDialogButtons(i);
+        inputTitle.value= noteTitles[i];
+        inputText.value= noteTexts[i];
+    } else {
+        writeDialogButtons();
+    }
+    document.getElementById('noteDialog-bg').classList.remove('display-none');
+}
+
+function writeDialogButtons(i) {
+    let buttonContainer= document.getElementById('saveButtonContainer');
+
+    if (i != undefined) {
+        buttonContainer.innerHTML= `
+            <p class="dialog-button" onclick="saveNote()">Speichern</p>
+            <p class="dialog-button" onclick="hideNoteDialog()">Abbrechen</p>
+        `;
+    } else {
         buttonContainer.innerHTML= `
             <p class="dialog-button" onclick="saveNote(${i})">Speichern</p>
             <p class="dialog-button" onclick="deleteNote(${i})">Löschen</p>
             <p class="dialog-button" onclick="hideNoteDialog()">Abbrechen</p>
         `;
-        inputTitle.value= noteTitles[i];
-        inputText.value= noteTexts[i];
-    } else {
-        buttonContainer.innerHTML= `
-            <p class="dialog-button" onclick="saveNote()">Speichern</p>
-            <p class="dialog-button" onclick="hideNoteDialog()">Abbrechen</p>
-        `;
     }
-    document.getElementById('noteDialog-bg').classList.remove('display-none');
 }
 
 function hideNoteDialog() {
